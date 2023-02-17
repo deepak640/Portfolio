@@ -41,6 +41,16 @@ p::selection {
   background-color: #2cd9ff;
 }
 
+/* preloader ------------------------ */
+.loading {
+  height: 100%;
+  background: black url(loading.gif) no-repeat center;
+  width: 100%;
+  background-size: 15%;
+  position: fixed;
+  z-index: 100;
+}
+
 /* navbar ---------------------------------------- */
 nav {
   background-color: rgba(229, 223, 223, 0.845);
