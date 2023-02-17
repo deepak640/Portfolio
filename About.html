@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,13 +15,17 @@
 
 <body style="background-color: #f5efef8f">
   <!-- navbar -->
-  <nav>
-    <ul>
-      <li class="navlinks"><a href="/index.html"> Home</a></li>
-      <li class="navlinks"><a href="#"> Project</a></li>
-      <li class="navlinks"><a href="#"> Blog</a></li>
-      <li class="navlinks"><a href="/About.html"> About</a></li>
-    </ul>
+  <nav class="navbar container">
+    <input type="checkbox" id="toggler">
+    <label for="toggler"><i class="ri-menu-line"></i></label>
+    <div class="menu">
+      <ul class="list">
+        <li class="navlinks"><a href="/index.html"> Home</a></li>
+        <li class="navlinks"><a href="#"> Project</a></li>
+        <li class="navlinks"><a href="#"> Blog</a></li>
+        <li class="navlinks"><a href="/About.html"> About</a></li>
+      </ul>
+    </div>
   </nav>
   <!-- about section -->
   <div class="about-content">
