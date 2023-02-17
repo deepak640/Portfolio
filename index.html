@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Protfolio</title>
+</head>
+
+<body>
+  <!-- Navbar  -->
+  <nav>
+    <ul>
+      <li class="navlinks"><a href="#"> Home</a></li>
+      <li class="navlinks"><a href="#"> Project</a></li>
+      <li class="navlinks"><a href="#"> Blog</a></li>
+      <li class="navlinks"><a href="/About.html"> About</a></li>
+    </ul>
+  </nav>
+  <!-- Profile section -->
+  <section class="hero-section">
+    <div>
+      <img src="css/profile.png" alt="no image" class="hero-profile" />
+    </div>
+    <div>
+      <h1>Hi ,i am <span class="auto-type"></span></h1>
+      <summary class="hero-content">
+        I am Deepak Negi, a full-stack developer skilled in HTML, CSS, and
+        React. I have a passion for creating dynamic and visually appealing
+        websites. My expertise in front-end and back-end technologies,
+        combined with my experience, make me a confident and skilled
+        developer. I am eager to continue learning and growing in the field of
+        web development.
+      </summary>
+    </div>
+  </section>
+  <!-- Skills -->
+  <section class="skills">
+    <h1>Technologies</h1>
+    <p>
+      My expertise lies in HTML, CSS, and React, which I have used to create
+      visually appealing and responsive web applications. In my previous
+      projects, I have been responsible for developing and implementing
+      features, ensuring that they are user-friendly and effective. As well as
+      I am familiar with HTML5, CSS, Git, Javascript, Node Js React Js and Web
+      Hosting
+    </p>
+  </section>
+  <!-- project -->
+  <section class="project">
+    <h1>Project Information</h1>
+    <p>
+      I have worked on several projects related to web development, including
+      an attendance record system, music player, and todo list application.
+      These projects were built using React on the front-end and back-end
+      technologies like Node.js and Express.
+    </p>
+    <hr />
+    <div class="accordion">
+      <h2>My College Projects</h2>
+      <article class="accordion-panel">
+        <input type="radio" name="accordion" id="accordion-question" />
+        <label for="accordion-question">
+          College attendance system
+          <i class="fa-solid fa-plus open"></i>
+          <i class="fa-solid fa-minus close"></i>
+        </label>
+        <div class="accordion-body">
+          <p class="accordion-answer">
+            <hr style="margin:none; width: 100%;" />
+            The attendance record system was designed to help organizations
+            keep track of employee attendance. The system had a user-friendly
+            interface that allowed employees to log in and log out, view their
+            attendance history, and download their attendance reports. The
+            back-end was built with Node.js and Express, and the front-end was
+            built with React.
+          </p>
+        </div>
+      </article>
+      <article class="accordion-panel">
+        <input type="radio" name="accordion" id="accordion-question-2" />
+        <label for="accordion-question-2">
+          Music player
+          <i class="fa-solid fa-plus open"></i>
+          <i class="fa-solid fa-minus close"></i>
+        </label>
+        <div class="accordion-body">
+          <p class="accordion-answer">
+            <hr style="margin:none; width: 100%;" />
+            The music player was designed to allow users to listen to their favorite
+            music and create playlists. The music player had a sleek and modern
+            design, and it allowed users to search for songs and artists, create and
+            edit playlists, and listen to music continuously. The back-end was built
+            with Node.js and Express, and the front-end was built with React.
+          </p>
+        </div>
+      </article>
+      <article class="accordion-panel">
+        <input type="radio" name="accordion" id="accordion-question-3" />
+        <label for="accordion-question-3">
+          TodoList
+          <i class="fa-solid fa-plus open"></i>
+          <i class="fa-solid fa-minus close"></i>
+        </label>
+        <div class="accordion-body">
+          <p class="accordion-answer">
+            <hr style="margin:none; width: 100%;" />
+            The todo list application was designed to help users keep track of their
+            tasks and manage their schedules. The application had a user-friendly
+            interface that allowed users to add and delete tasks, and view their
+            task lists. The back-end was built with Node.js and Express, and the
+            front-end was built with React.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Footer section-->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-right">
+        <h3>Follow me on</h3>
+        <div class="footer-icons">
+          <a href="https://twitter.com/DNegi92616423"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/deepak.negi_143/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/deepak-negi-23a52719b/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://discord.gg/EXqFuEUNGm"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2021 Made By AK ❤️</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: [ "Coder", "Developer", "Student" ],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>
