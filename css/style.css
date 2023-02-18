@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+
 }
 
 html {
@@ -53,7 +55,7 @@ p::selection {
 
 /* navbar ---------------------------------------- */
 nav {
-  background-color: rgba(229, 223, 223, 0.845);
+  background-color: rgba(229, 223, 223);
 }
 
 nav ul {
@@ -82,7 +84,6 @@ nav ul li a {
   color: black;
   display: block;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 nav ul li a::after {
@@ -116,12 +117,13 @@ nav ul li a:hover::after {
 }
 
 .hero-section div:nth-child(2) {
-  /* background-color: rebeccapurple; */
   width: 60%;
   padding: 100px 0 20px 100px;
 }
 
 .hero-profile {
+  position: relative;
+  z-index: -1;
   box-shadow: 0px 10px 10px 0px black;
   border-radius: 50%;
   border: 1px solid white;
@@ -382,7 +384,7 @@ footer {
 @media (max-width:700px) {
   nav {
     position: relative;
-    height: 9vh;
+    height: 10vh;
   }
 
   .navbar i {
@@ -417,7 +419,7 @@ footer {
 
   .list li {
     display: block;
-    background-color: rgba(229, 223, 223, 0.845);
+    background-color: rgba(229, 223, 223);
   }
 
   .list li a:hover::after {
@@ -425,7 +427,7 @@ footer {
   }
 
   #toggler:checked~.menu {
-    height: auto;
+    height: 450px;
   }
 }
 
