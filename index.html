@@ -23,8 +23,8 @@
     <div class="menu">
       <ul class="list">
         <li class="navlinks"><a href="index.html"> Home</a></li>
-        <li class="navlinks"><a href="#"> Project</a></li>
-        <li class="navlinks"><a href="#"> Blog</a></li>
+        <li class="navlinks"><a href="project.html"> Project</a></li>
+        <li class="navlinks"><a href="blog.html"> Blog</a></li>
         <li class="navlinks"><a href="About.html"> About</a></li>
       </ul>
     </div>
@@ -35,7 +35,7 @@
       <img src="css/profile.png" alt="no image" class="hero-profile" />
     </div>
     <div>
-      <h1>Hi ,i am <span class="auto-type"></span></h1>
+      <h1>Hi, i am <span class="auto-type"></span></h1>
       <summary class="hero-content">
         I am Deepak Negi, a full-stack developer skilled in HTML, CSS, and
         React. I have a passion for creating dynamic and visually appealing
@@ -145,7 +145,14 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="js/script.js">
+  <script src="js/script.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: [ "Coder", "Developer", "Student" ],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true,
+    });
   </script>
 </body>
 

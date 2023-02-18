@@ -43,6 +43,7 @@ p::selection {
   background-color: #2cd9ff;
 }
 
+
 /* preloader ------------------------ */
 .loading {
   height: 100%;
@@ -72,6 +73,7 @@ nav i {
 }
 
 nav ul li {
+  position: relative;
   display: inline-block;
   font-size: 1.2rem;
   align-items: center;
@@ -88,17 +90,18 @@ nav ul li a {
 
 nav ul li a::after {
   content: "";
-  width: 0;
+  width: var(--width, 0%);
   height: 3px;
   border-radius: 20%;
   background-color: rgb(203, 169, 169);
   margin: auto;
+  margin-top: 5px;
   display: block;
   transition: all ease-in 0.2s;
 }
 
 nav ul li a:hover::after {
-  width: 90%;
+  width: 100%;
 }
 
 /* profile ---------------------------------------------------*/
@@ -414,12 +417,17 @@ footer {
   }
 
   .list {
-    margin: 0;
+    width: 100%;
   }
 
   .list li {
     display: block;
     background-color: rgba(229, 223, 223);
+  }
+
+  .list li a {
+    width: max-content;
+    margin: auto;
   }
 
   .list li a:hover::after {
