@@ -16,8 +16,8 @@ const navlinks = document.querySelectorAll('nav a').forEach(link => {
     }
   }
   else if (link.href.includes(`${activepage}`)) {
-    if (`${activepage}` === `${link.href}` || `http://127.0.0.1:5500${activepage}` === `${link.href}`) {
-      console.log(`/Portfolio${activepage}`);
+    if (`https://mashoornegi.github.io${activepage}` === `${link.href}` || `http://127.0.0.1:5500${activepage}` === `${link.href}`) {
+      console.log(link.href);
       const css = window.getComputedStyle(link, '::after')
       link.style.setProperty('--width', '100%')
     }
