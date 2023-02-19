@@ -38,9 +38,9 @@ p {
   transition: all ease-in-out 0.3s;
 }
 
-p::selection {
+::selection {
   color: black;
-  background-color: #2cd9ff;
+  background-color: #389db7d1;
 }
 
 
