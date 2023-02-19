@@ -9,9 +9,11 @@ window.addEventListener("load", function () {
 
 const activepage = window.location.pathname
 const navlinks = document.querySelectorAll('nav a').forEach(link => {
-  if (link.href.includes('index.html') && (activepage === '/')) {
-    console.log(activepage);
-    link.style.setProperty('--width', '100%')
+  if (link.href.includes('index.html')) {
+    if (activepage === '/' || activepage === '/Portfolio/' || link.href.includes(`${activepage}`)) {
+      console.log(activepage);
+      link.style.setProperty('--width', '100%')
+    }
   }
   else if (link.href.includes(`${activepage}`) && (`http://127.0.0.1:5500${activepage}` === `${link.href}` || `/Portfolio${activepage}` === `${link.href}`)) {
 
