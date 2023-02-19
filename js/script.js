@@ -16,7 +16,7 @@ const navlinks = document.querySelectorAll('nav a').forEach(link => {
     }
   }
   else if (link.href.includes(`${activepage}`)) {
-    if ((`/Portfolio${activepage}` === `${link.href}` ||   `http://127.0.0.1:5500${activepage}` === `${link.href}`)) {
+    if (`${activepage}` === `${link.href}` || `http://127.0.0.1:5500${activepage}` === `${link.href}`) {
       console.log(`/Portfolio${activepage}`);
       const css = window.getComputedStyle(link, '::after')
       link.style.setProperty('--width', '100%')
