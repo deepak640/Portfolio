@@ -311,6 +311,7 @@ nav ul li a:hover::after {
 }
 
 .projects {
+  height: max-content;
   width: 100%;
   max-width: 300px;
   margin-bottom: 30px;
