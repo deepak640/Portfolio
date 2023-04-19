@@ -32,7 +32,12 @@ section {
 .fab {
   transition: all ease-in-out 0.5s;
 }
-
+marquee{
+  background-color: var(--background-color);
+  font-size: 1rem;
+  margin: 20px auto;
+  padding: 10px;
+}
 hr {
   width: 50%;
   border: 0;
